@@ -13,6 +13,7 @@ func TestIsPalindrome(t *testing.T) {
 	}{
 		{name: "returns false if input is negative", input: -676766, want: false},
 		{name: "input is even digits and symmetrical", input: 1111, want: true},
+		{name: "input is even digits and symmetrical", input: 44555544, want: true},
 		{name: "input is odd digits and symmetrical", input: 11111, want: true},
 		{name: "input is even digits and non-symmetrical", input: 222333, want: false},
 		{name: "input is odd digits and non-symmetrical", input: 2223335, want: false},

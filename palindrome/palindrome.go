@@ -25,5 +25,12 @@ func IsPalindrome(i int64) (r bool) {
 		last = s[half+1:]
 	}
 
-	return first == last
+	return first == reverseString(last)
 }
+
+func reverseString(s string) (result string) {
+	for _,v := range s {
+	  result = string(v) + result
+	}
+	return 
+  }
